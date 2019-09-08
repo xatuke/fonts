@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    app:cardElevation="38dp"
+    app:cardCornerRadius="35dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="55dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="14dp"
+        >
+
+        <TextView
+            android:id="@+id/upboy"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:text="(  ͡°  ͜ʖ  ͡°) "
+            android:textColor="@color/textColor"
+            android:layout_marginTop="-3dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <GridView
+            android:layout_below="@id/upboy"
+            android:id="@+id/simpleGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="15dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
