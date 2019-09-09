@@ -25,7 +25,6 @@ public class MyListAdapter extends ArrayAdapter<String> {
 
     public MyListAdapter(Activity context, ArrayList<String> myStringList) {
         super(context, R.layout.style_list_item, myStringList);
-        // TODO Auto-generated constructor stub
 
         this.context=context;
         this.myStringList = myStringList;
