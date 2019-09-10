@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ASCIIActivity">
+    <RelativeLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="22dp"
+            app:contentPaddingLeft="14dp"
+            app:contentPaddingTop="3dp"
+            app:contentPaddingRight="14dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ASCII Image"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/akronim_reg"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/heading"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fileSelector"
+        android:layout_margin="16dp"
+        />
+    <RelativeLayout
+        android:id="@+id/fileSelector"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="SElect file"
+            android:textColor="@color/textColor"
+            android:backgroundTint="@color/cream"/>
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btn_share"
+            android:layout_height="wrap_content"
+            android:entries="@array/color_type" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/cream"
+            android:text="Share"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+</RelativeLayout>

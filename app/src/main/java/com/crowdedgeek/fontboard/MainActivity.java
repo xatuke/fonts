@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         asciiGen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO: make gen
+                startActivity(new Intent(MainActivity.this, ASCIIActivity.class));
             }
         });
         qrGen.setOnClickListener(new View.OnClickListener() {
