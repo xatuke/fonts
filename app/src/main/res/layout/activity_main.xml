@@ -20,24 +20,61 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                app:cardCornerRadius="22dp"
+                app:cardCornerRadius="18dp"
                 app:cardElevation="22dp"
                 app:contentPaddingLeft="14dp"
-                app:contentPaddingTop="6dp"
+                app:contentPaddingTop="3dp"
                 app:contentPaddingRight="14dp">
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="   Fonts   "
+                    android:text="  Fonts  "
                     android:textColor="@color/textColor"
                     android:fontFamily="@font/akronim_reg"
                     android:textSize="38sp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+                app:cardElevation="18dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="8dp"
+                app:contentPadding="6dp">
 
+
+            <ImageView
+                android:id="@+id/asiicImgGen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="-8dp"
+                android:src="@drawable/ic_outline_photo_black_48dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="22dp"
+                app:contentPadding="6dp">
+
+
+                <ImageView
+                    android:id="@+id/qrCodeGen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_qr_code"/>
+
+            </androidx.cardview.widget.CardView>
         </RelativeLayout>
 
         <RelativeLayout

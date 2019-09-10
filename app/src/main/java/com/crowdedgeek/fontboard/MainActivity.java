@@ -3,18 +3,21 @@ package com.crowdedgeek.fontboard;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.GridView;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Switch;
 
 import com.crowdedgeek.fontboard.Styler.DecorateTool;
 import com.crowdedgeek.fontboard.Styler.StylistGenerator;
+import com.crowdedgeek.fontboard.utils.QRGenerator;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.ArrayList;
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Switch decSwitch;
     EditText input;
     ListView listView;
+    ImageView asciiGen, qrGen;
     boolean decors;
     ArrayList<String> dataList = new ArrayList<>();
     @Override
@@ -62,14 +66,27 @@ public class MainActivity extends AppCompatActivity {
                 makeMyListGoUp();
             }
         });
-        CardView llBottomSheet = findViewById(R.id.bottom_sheet);
+        final CardView llBottomSheet = findViewById(R.id.bottom_sheet);
 
-        BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(llBottomSheet);
+        final BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.from(llBottomSheet);
         bottomSheetBehavior.setHideable(false);
-
         GridView v = findViewById(R.id.simpleGridView);
         CustomAdapter adapter = new CustomAdapter(MainActivity.this, kawais);
         v.setAdapter(adapter);
+        asciiGen = findViewById(R.id.asiicImgGen);
+        qrGen = findViewById(R.id.qrCodeGen);
+        asciiGen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO: make gen
+            }
+        });
+        qrGen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, QRActivity.class));
+            }
+        });
 
     }
 

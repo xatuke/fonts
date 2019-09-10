@@ -69,7 +69,7 @@ public class ReplaceEffect implements Style {
                 "αв¢∂єfgнιנкℓмиσρqяѕтυνωχуz_,;.?!/\\'αв¢∂єfgнιנкℓмиσρqяѕтυνωχуz0123456789",
                 "ค๒ς๔єŦﻮђเןкl๓ภ๏קợгรtยשฬץאz_,;.?!/\\'ค๒ς๔єŦﻮђเןкl๓ภ๏קợгรtยשฬץאz0123456789",
                 "ĂβČĎĔŦĞĤĨĴĶĹМŃŐРQŔŚŤÚVŴЖŶŹ_,;.?!/\\'ĂβČĎĔŦĞĤĨĴĶĹМŃŐРQŔŚŤÚVŴЖŶŹ0123456789",
-                "48(d3f9h!jk1mn0pqr57uvwxy2_,;.?!/\\'48(d3f9h!jk1mn0pqr57uvwxy20123456789",
+                "48(d3f9h1jk!mn0pqr57uvwxy2_,;.?!/\\'48(d3f9h1jk!mn0pqr57uvwxy20123456789",
                 "ɐqɔpǝɟƃɥ!ɾʞןɯuodbɹsʇnʌʍxʎz_,;.?!/\\'ɐqɔpǝɟƃɥ!ɾʞןɯuodbɹsʇnʌʍxʎz0123456789",
                 "9876543210zʎxʍʌnʇsɹbdouɯןʞɾ!ɥƃɟǝpɔqɐ'\\/!?.;,_zʎxʍʌnʇsɹbdouɯןʞɾ!ɥƃɟǝpɔqɐ",
                 "aвcdeғgнιjĸlмnopqrѕтυvwхyz_,;.?!/\\'aвcdeғgнιjĸlмnopqrѕтυvwхyz0123456789",
@@ -79,18 +79,6 @@ public class ReplaceEffect implements Style {
                 "äḅċďệḟġḧïjḳŀṃńöṗqŕṩẗüṿẅẍÿẓ_,;.?!/\\'äḅċďệḟġḧïjḳŀṃńöṗqŕṩẗüṿẅẍÿẓ0123456789",
                 "ḀḃḉḊḕḟḠḧḭjḲḶṁṆṏṖqṙṠṮṳṼẇẌẏẒ_,;.?!/\\'ḀḃḉḊḕḟḠḧḭjḲḶṁṆṏṖqṙṠṮṳṼẇẌẏẒ0123456789",
                 "⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵_,;.?!/\\'⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵0123456789",
-
-//                //parentheses up case
-                "\uD83C\uDD10\uD83C\uDD11\uD83C\uDD12\uD83C\uDD13\uD83C\uDD14\uD83C\uDD15\uD83C" +
-                        "\uDD16\uD83C\uDD17\uD83C\uDD18\uD83C\uDD19\uD83C\uDD1A\uD83C\uDD1B\uD83C" +
-                        "\uDD1C\uD83C\uDD1D\uD83C\uDD1E\uD83C\uDD1F\uD83C\uDD20\uD83C\uDD21\uD83C" +
-                        "\uDD22\uD83C\uDD23\uD83C\uDD24\uD83C\uDD25\uD83C\uDD26\uD83C\uDD27\uD83C" +
-                        "\uDD28\uD83C\uDD29_,;.?!/\\'\uD83C\uDD10\uD83C\uDD11\uD83C\uDD12\uD83C" +
-                        "\uDD13\uD83C\uDD14\uD83C\uDD15\uD83C\uDD16\uD83C\uDD17\uD83C\uDD18\uD83C" +
-                        "\uDD19\uD83C\uDD1A\uD83C\uDD1B\uD83C\uDD1C\uD83C\uDD1D\uD83C\uDD1E\uD83C" +
-                        "\uDD1F\uD83C\uDD20\uD83C\uDD21\uD83C\uDD22\uD83C\uDD23\uD83C\uDD24\uD83C" +
-                        "\uDD25\uD83C\uDD26\uD83C\uDD27\uD83C\uDD28\uD83C\uDD290123456789",
-
                 "αЪċđэךּġЋїפֿқľmήŏÞףřšŧŭνώאַỶż_,;.?!/\\'αЪċđэךּġЋїפֿқľmήŏÞףřšŧŭνώאַỶż0123456789",
                 "αвς∂єfgнιנкℓмиσρףяѕтυνωאָуz_,;.?!/\\'αвς∂єfgнιנкℓмиσρףяѕтυνωאָуz0123456789",
                 "ḀḃḉḊḕḟḠḧḭjḲḶṁṆṏṖqṙṠṮṳṼẇẌẏẒ_,;.?!/\\'ḀḃḉḊḕḟḠḧḭjḲḶṁṆṏṖqṙṠṮṳṼẇẌẏẒ0123456789",

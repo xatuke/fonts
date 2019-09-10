@@ -8,26 +8,29 @@
     app:cardCornerRadius="35dp"
     app:behavior_hideable="true"
     app:behavior_peekHeight="55dp"
-    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="14dp"
         >
-
-        <TextView
+        <FrameLayout
             android:id="@+id/upboy"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="-8dp"
+            >
+        <ImageView
+            android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_centerHorizontal="true"
-            android:text="(  ͡°  ͜ʖ  ͡°) "
-            android:textColor="@color/textColor"
-            android:layout_marginTop="-3dp"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <GridView
+            android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-8dp"
+            />
+        </FrameLayout>
+        <com.crowdedgeek.fontboard.utils.BottomSheetGridView
             android:layout_below="@id/upboy"
             android:id="@+id/simpleGridView"
             android:layout_width="match_parent"
