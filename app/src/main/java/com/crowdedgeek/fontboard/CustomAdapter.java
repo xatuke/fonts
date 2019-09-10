@@ -10,6 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.crowdedgeek.fontboard.Constants.kawais;
+
 
 public class CustomAdapter extends BaseAdapter {
     Context context;
@@ -40,16 +42,8 @@ public class CustomAdapter extends BaseAdapter {
         view = inflter.inflate(R.layout.kawai_item, null); // inflate the layout
         final TextView kw = view.findViewById(R.id.textKawai);
         kw.setText(kawais[i]);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("styletext", kawais[i]);
-                clipboard.setPrimaryClip(clip);
-                Toast.makeText(context, "Copied to clipboard!", Toast.LENGTH_SHORT).show();
-            }
-        });
         kw.setSelected(true);
+        view.setFocusable(false);
         return view;
     }
 }
